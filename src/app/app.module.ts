@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+import { SearchComponent } from './search/search.component';
+import { TopHeaderComponent } from './top-header/top-header.component';
+import { TopNavComponent } from './top-nav/top-nav.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    SearchComponent,
+    TopHeaderComponent,
+    TopNavComponent
   ],
   imports: [
     BrowserModule,
@@ -15,6 +19,6 @@ import { AppComponent } from './app.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [SearchComponent, TopNavComponent, TopHeaderComponent]
 })
 export class AppModule { }

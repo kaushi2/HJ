@@ -1,0 +1,60 @@
+  <!-- search bar starts here -->
+  <div class="search-bar">
+    <div class="wrapper">
+      <form method="get" action="http://www.halaljourney.com/search.php">
+        <div class="search-bar-cell">
+          <img src="images/magnifier.png" tppabs="http://www.halaljourney.com/images/magnifier.png" class="searchIndIcn" />
+          <label>Your Destination</label>
+          <div class="frmSearch">
+            <input type="text" name="countryName" value="" placeholder="Enter a destination" class="search" autocomplete="off">
+            <div id="suggesstion-box" class="country-listul"></div>
+          </div>
+          <input type="hidden" class="countryId" value="" name="countryCode" />
+          <input type="hidden" class="cityId" value="" name="cityCode" />
+          <div class="indEror hide_now"></div>
+        </div>
+        <div class="search-bar-cell">
+          <label>Check In</label>
+          <input type="text" name="checkInDt" value="" placeholder="Yy-Mm-Dd" class="datepicker calendar" id="datepicker1">
+        </div>
+        <div class="search-bar-cell">
+          <label>Check Out</label>
+          <input type="text" name="checkOutDt" value="" placeholder="Yy-Mm-Dd" class="datepicker calendar" id="datepicker2">
+        </div>
+        <div class="search-bar-cell">
+          <label>Adults</label>
+          <select class="adults" name="adults">
+            <option value="1" >01</option>
+            <option value="2" >02</option>
+            <option value="3" >03</option>
+            <option value="4" >04</option>
+            <option value="5" >05</option>
+            <option value="6" >06</option>
+            <option value="7" >07</option>
+            <option value="8" >08</option>
+          </select>
+        </div>
+        <div class="search-bar-cell">
+          <label>Kids</label>
+          <select class="kids" name="kids">
+            <option value="0" >00</option>
+            <option value="1" >01</option>
+            <option value="2" >02</option>
+            <option value="3" >03</option>
+            <option value="4" >04</option>
+          </select>
+        </div>
+        <div class="search-bar-cell">
+          <label>Rooms</label>
+          <select class="Rooms" name="Rooms">
+            <option value="1" >01</option>
+            <option value="2" >02</option>
+            <option value="3" >03</option>
+            <option value="4" >04</option>
+          </select>
+        </div>
+        <input type="submit" name="submitForm" value="search now">
+      </form>
+    </div>
+  </div>
+  <!-- search bar ends here -->
